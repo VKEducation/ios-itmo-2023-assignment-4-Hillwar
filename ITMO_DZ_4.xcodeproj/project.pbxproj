@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A25EC4702B1CA17F0047B6CD /* RWLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25EC46F2B1CA17F0047B6CD /* RWLock.swift */; };
 		F55FD22E2B0B2ADA004E8D46 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55FD22D2B0B2ADA004E8D46 /* main.swift */; };
 		F55FD2352B0B2B63004E8D46 /* ThreadSafeArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55FD2342B0B2B63004E8D46 /* ThreadSafeArray.swift */; };
 		F55FD2372B0B2EC8004E8D46 /* TaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55FD2362B0B2EC8004E8D46 /* TaskManager.swift */; };
@@ -25,6 +26,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A25EC46F2B1CA17F0047B6CD /* RWLock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RWLock.swift; sourceTree = "<group>"; };
+		A25EC4722B1CB9EB0047B6CD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/MacOSX.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		F55FD22A2B0B2ADA004E8D46 /* ITMO_DZ_4 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ITMO_DZ_4; sourceTree = BUILT_PRODUCTS_DIR; };
 		F55FD22D2B0B2ADA004E8D46 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		F55FD2342B0B2B63004E8D46 /* ThreadSafeArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadSafeArray.swift; sourceTree = "<group>"; };
@@ -42,11 +45,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A25EC4712B1CB9EB0047B6CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A25EC4722B1CB9EB0047B6CD /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F55FD2212B0B2ADA004E8D46 = {
 			isa = PBXGroup;
 			children = (
 				F55FD22C2B0B2ADA004E8D46 /* ITMO_DZ_4 */,
 				F55FD22B2B0B2ADA004E8D46 /* Products */,
+				A25EC4712B1CB9EB0047B6CD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +76,7 @@
 				F55FD22D2B0B2ADA004E8D46 /* main.swift */,
 				F55FD2342B0B2B63004E8D46 /* ThreadSafeArray.swift */,
 				F55FD2362B0B2EC8004E8D46 /* TaskManager.swift */,
+				A25EC46F2B1CA17F0047B6CD /* RWLock.swift */,
 			);
 			path = ITMO_DZ_4;
 			sourceTree = "<group>";
@@ -127,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F55FD2372B0B2EC8004E8D46 /* TaskManager.swift in Sources */,
+				A25EC4702B1CA17F0047B6CD /* RWLock.swift in Sources */,
 				F55FD2352B0B2B63004E8D46 /* ThreadSafeArray.swift in Sources */,
 				F55FD22E2B0B2ADA004E8D46 /* main.swift in Sources */,
 			);
@@ -257,7 +271,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GMD7EK7S94;
+				DEVELOPMENT_TEAM = S8QD9V2UHV;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -268,7 +282,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GMD7EK7S94;
+				DEVELOPMENT_TEAM = S8QD9V2UHV;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
